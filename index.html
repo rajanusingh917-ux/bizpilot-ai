@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BizPilot AI - AI Assistant for Your Business</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="logo">BizPilot<span>AI</span></div>
+  <nav>
+    <a href="#features">Features</a>
+    <a href="#pricing">Pricing</a>
+    <a href="#demo">AI Demo</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-text">
+    <p class="badge">🤖 AI BUSINESS ASSISTANT</p>
+    <h1>Your Business.<br><span>Powered by AI.</span></h1>
+    <p>Answer customer questions, collect leads and support your customers 24/7 with an AI assistant.</p>
+    <a class="hero-btn" href="#demo">Try AI Assistant</a>
+  </div>
+  <div class="hero-card">
+    <div class="mini-header">🤖 BizPilot AI</div>
+    <div class="message bot">Hi! 👋 I'm your AI business assistant. How can I help you today?</div>
+    <div class="message user">What services do you provide?</div>
+    <div class="message bot">We provide professional services and customer support 24/7.</div>
+  </div>
+</section>
+
+<section id="features" class="section">
+  <h2>Everything Your Business Needs</h2>
+  <p class="section-subtitle">Let AI handle repetitive customer questions while you focus on your business.</p>
+  <div class="features">
+    <div class="feature"><div class="icon">💬</div><h3>24/7 Customer Support</h3><p>Answer common customer questions instantly.</p></div>
+    <div class="feature"><div class="icon">🎯</div><h3>Lead Generation</h3><p>Collect customer enquiries and potential leads.</p></div>
+    <div class="feature"><div class="icon">🌍</div><h3>Multiple Languages</h3><p>Communicate with customers around the world.</p></div>
+    <div class="feature"><div class="icon">📅</div><h3>Booking Assistance</h3><p>Help customers request appointments and bookings.</p></div>
+  </div>
+</section>
+
+<section id="demo" class="demo-section">
+  <div class="demo-container">
+    <div class="demo-info">
+      <p class="badge">LIVE DEMO</p>
+      <h2>Try BizPilot AI</h2>
+      <p>Ask our demo assistant about opening hours, services, pricing or location.</p>
+      <p class="demo-note">This is a demo version. Real AI API integration can be added later.</p>
+    </div>
+    <div class="chat">
+      <div class="chat-header"><div class="avatar">🤖</div><div><strong>BizPilot AI</strong><small>Online</small></div></div>
+      <div id="chatMessages" class="chat-messages">
+        <div class="chat-message bot">Hello! 👋 I'm BizPilot AI.<br>Ask me about our services, pricing, hours or location.</div>
+      </div>
+      <div class="quick-buttons">
+        <button onclick="quickQuestion('What are your services?')">Services</button>
+        <button onclick="quickQuestion('What are your opening hours?')">Hours</button>
+        <button onclick="quickQuestion('Where are you located?')">Location</button>
+      </div>
+      <div class="chat-input">
+        <input id="userInput" type="text" placeholder="Type your question..." onkeydown="handleEnter(event)">
+        <button onclick="sendMessage()">Send</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="pricing" class="section">
+  <h2>Simple Pricing</h2>
+  <p class="section-subtitle">Start small and upgrade as your business grows.</p>
+  <div class="pricing">
+    <div class="price-card"><h3>Starter</h3><div class="price">$19<span>/month</span></div><p>AI customer support</p><p>Basic FAQ setup</p><p>Website chatbot</p><button>Get Started</button></div>
+    <div class="price-card popular"><div class="popular-label">MOST POPULAR</div><h3>Business</h3><div class="price">$49<span>/month</span></div><p>Everything in Starter</p><p>Lead collection</p><p>Multiple languages</p><button>Get Started</button></div>
+    <div class="price-card"><h3>Pro</h3><div class="price">$99<span>/month</span></div><p>Advanced AI assistant</p><p>Booking assistance</p><p>Priority support</p><button>Get Started</button></div>
+  </div>
+</section>
+
+<footer>
+  <div class="logo">BizPilot<span>AI</span></div>
+  <p>AI-powered customer support for modern businesses.</p>
+  <p>© 2026 BizPilot AI. All rights reserved.</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
